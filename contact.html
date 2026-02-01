@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="sk">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - domain | Odborníci na záhrady a záhradníctvo</title>
+  <meta name="description" content="Kontaktujte nás pre profesionálne poradenstvo v oblasti záhradníctva. Vytvárame zelené oázy a pomáhame s pestovaním zeleniny a ovocia.">
+  <meta property="og:title" content="Kontakt - domain">
+  <meta property="og:description" content="Kontaktujte nás pre profesionálne poradenstvo v oblasti záhradníctva. Vytvárame zelené oázy a pomáhame s pestovaním zeleniny a ovocia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://domain.com/contact.html">
+  <link rel="canonical" href="https://domain.com/contact.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+ </head>
+ <body>
+  <header class="l-header navbar navbar-expand-md sticky-top bg-white border-bottom">
+   <div class="container">
+    <a class="navbar-brand c-logo" href="/" aria-label="Zelená Oáza - Domov"> 
+     <svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-logo__img" role="img" aria-label="Zelená Oáza Logo">
+      <rect width="150" height="40" rx="4" fill="#2D6A4F" /> <path d="M20 10C20 10 15 15 15 20C15 25 17.5 27.5 20 27.5C22.5 27.5 25 25 25 20C25 15 20 10 20 10Z" fill="#52B788" /> <text x="35" y="26" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Zelená Oáza</text>
+     </svg> 
+    </a>
+    <button class="c-nav__toggle navbar-toggler" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Prepnúť navigáciu"><span class="navbar-toggler-icon"></span></button>
+    <nav id="nav-menu" class="c-nav collapse navbar-collapse">
+     <ul class="c-nav__menu navbar-nav ms-auto mb-2 mb-md-0">
+      <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Domov</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">O Nás</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Služby</a></li>
+      <li class="nav-item"><a class="nav-link" href="team.html">Tím</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <section class="l-hero py-5" style="background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1600&amp;h=600&amp;fit=crop&amp;auto=format'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container">
+     <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+       <li class="breadcrumb-item"><a href="index.html">Domov</a></li>
+       <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
+      </ol>
+     </nav>
+     <div class="row py-5">
+      <div class="col-lg-8 mx-auto text-center">
+       <h1 class="display-4 fw-bold text-white mb-3">Spojte sa s nami</h1>
+       <p class="lead text-white">Máte otázky o záhradníctve? Potrebujete profesionálne poradenstvo? Sme tu pre vás.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-4 py-md-5">
+    <div class="container">
+     <div class="row g-4">
+      <div class="col-lg-8">
+       <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+         <h2 class="h3 mb-4">Kontaktný formulár</h2>
+         <form id="contactForm" method="POST" action="thank_you.html" novalidate>
+          <div class="row g-3">
+           <div class="col-md-6">
+            <label for="contactName" class="form-label">Meno a priezvisko <span class="text-danger">*</span></label> <input type="text" class="form-control" id="contactName" name="name" required>
+            <div class="invalid-feedback">Prosím, zadajte vaše meno.</div>
+           </div>
+           <div class="col-md-6">
+            <label for="contactEmail" class="form-label">E-mailová adresa <span class="text-danger">*</span></label> <input type="email" class="form-control" id="contactEmail" name="email" required>
+            <div class="invalid-feedback">Prosím, zadajte platnú e-mailovú adresu.</div>
+           </div>
+           <div class="col-12">
+            <label for="contactPhone" class="form-label">Telefónne číslo <span class="text-danger">*</span></label> <input type="tel" class="form-control" id="contactPhone" name="phone" required>
+            <div class="invalid-feedback">Prosím, zadajte platné telefónne číslo.</div>
+           </div>
+           <div class="col-12">
+            <label for="contactSubject" class="form-label">Predmet</label> <input type="text" class="form-control" id="contactSubject" name="subject">
+           </div>
+           <div class="col-12">
+            <label for="contactMessage" class="form-label">Správa <span class="text-danger">*</span></label> <textarea class="form-control" id="contactMessage" name="message" rows="6" required></textarea>
+            <div class="invalid-feedback">Prosím, napíšte svoju správu.</div>
+           </div>
+           <div class="col-12">
+            <div class="form-check">
+             <input class="form-check-input" type="checkbox" id="contactPrivacy" name="privacy" required> <label class="form-check-label" for="contactPrivacy"> Prečítal som si a súhlasím s <a href="privacy.html" target="_blank">Ochranou osobných údajov</a> <span class="text-danger">*</span> </label>
+             <div class="invalid-feedback">Musíte súhlasiť s ochranou osobných údajov pred odoslaním formulára.</div>
+            </div>
+           </div>
+           <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-lg w-100 w-md-auto">Odoslať správu</button>
+           </div>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+       <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+         <h2 class="h4 mb-4">Kontaktné informácie</h2>
+         <div class="mb-4">
+          <h3 class="h6 fw-semibold mb-2">Adresa</h3>
+          <p class="mb-0">{address}</p>
+         </div>
+         <div class="mb-4">
+          <h3 class="h6 fw-semibold mb-2">Telefón</h3>
+          <p class="mb-0"><a href="tel:{telephone}" class="text-decoration-none">{telephone}</a></p>
+         </div>
+         <div class="mb-4">
+          <h3 class="h6 fw-semibold mb-2">E-mail</h3>
+          <p class="mb-0"><a href="mailto:info@domain.com" class="text-decoration-none">info@domain.com</a></p>
+         </div>
+         <div>
+          <h3 class="h6 fw-semibold mb-2">Otváracie hodiny</h3>
+          <ul class="list-unstyled mb-0">
+           <li class="mb-1">Pondelok - Piatok: 8:00 - 18:00</li>
+           <li class="mb-1">Sobota: 9:00 - 15:00</li>
+           <li>Nedeľa: Zatvorené</li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-4 py-md-5 bg-light">
+    <div class="container">
+     <h2 class="h3 text-center mb-4">Kde nás nájdete</h2>
+     <div class="ratio" style="--bs-aspect-ratio: 56.25%;">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=17.0%2C48.1%2C17.2%2C48.2&amp;layer=mapnik&amp;marker=48.15%2C17.1" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa umiestnenia domain"></iframe>
+     </div>
+    </div>
+   </section>
+   <section class="py-4 py-md-5">
+    <div class="container">
+     <h2 class="h3 text-center mb-5">Naše oddelenia</h2>
+     <div class="row g-4">
+      <div class="col-md-4">
+       <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+         <div class="ratio ratio-1x1 mb-3" style="max-width: 80px; margin: 0 auto;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ikona poradenstva">
+           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor" />
+          </svg>
+         </div>
+         <h3 class="h5 text-center mb-3">Záhradné poradenstvo</h3>
+         <p class="text-center mb-3">Odborné rady pre vašu záhradu</p>
+         <p class="text-center mb-0"><a href="mailto:info@domain.com" class="text-decoration-none">info@domain.com</a></p>
+         <p class="text-center mb-0"><a href="tel:{telephone}" class="text-decoration-none">{telephone}</a></p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+         <div class="ratio ratio-1x1 mb-3" style="max-width: 80px; margin: 0 auto;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ikona predaja">
+           <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12z" fill="currentColor" />
+          </svg>
+         </div>
+         <h3 class="h5 text-center mb-3">Predaj a objednávky</h3>
+         <p class="text-center mb-3">Osivá, rastliny a záhradné potreby</p>
+         <p class="text-center mb-0"><a href="mailto:info@domain.com" class="text-decoration-none">info@domain.com</a></p>
+         <p class="text-center mb-0"><a href="tel:{telephone}" class="text-decoration-none">{telephone}</a></p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+         <div class="ratio ratio-1x1 mb-3" style="max-width: 80px; margin: 0 auto;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ikona služieb">
+           <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" fill="currentColor" />
+          </svg>
+         </div>
+         <h3 class="h5 text-center mb-3">Služby a údržba</h3>
+         <p class="text-center mb-3">Komplexná starostlivosť o záhradu</p>
+         <p class="text-center mb-0"><a href="mailto:info@domain.com" class="text-decoration-none">info@domain.com</a></p>
+         <p class="text-center mb-0"><a href="tel:{telephone}" class="text-decoration-none">{telephone}</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-4 py-md-5 bg-light">
+    <div class="container">
+     <h2 class="h3 text-center mb-5">Navštívte naše záhradné centrum</h2>
+     <div class="row g-4">
+      <div class="col-md-4">
+       <div class="ratio ratio-4x3">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Moderné záhradné centrum s rastlinami, kvetinami a záhradníckymi potrebami" class="img-fluid" style="object-fit: cover;" loading="lazy" width="800" height="600">
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="ratio ratio-4x3">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Vnútorný priestor predajne s regálmi plnými osív, hnojív a záhradných nástrojov" class="img-fluid" style="object-fit: cover;" loading="lazy" width="800" height="600">
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="ratio ratio-4x3">
+        <img src="https://images.unsplash.com/photo-1591958911259-bee2173bdccc?w=800&amp;h=600&amp;fit=crop&amp;auto=format" alt="Poradenské centrum s odborníkmi radiacimi zákazníkom pri výbere rastlín" class="img-fluid" style="object-fit: cover;" loading="lazy" width="800" height="600">
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-4 py-md-5">
+    <div class="container">
+     <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+       <h2 class="h3 mb-3">Potrebujete rýchlu odpoveď?</h2>
+       <p class="mb-4">Náš chatbot vám pomôže nájsť odpovede na najčastejšie otázky o pestovaní, starostlivosti o rastliny a našich službách.</p>
+       <a href="#chatbot" class="btn btn-outline-primary">Spustiť chatbot</a>
+      </div>
+      <div class="col-lg-6">
+       <div class="ratio ratio-16x9">
+        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&amp;h=450&amp;fit=crop&amp;auto=format" alt="Online chatbot asistent pre záhradníctvo, moderné technológie v záhradníckych službách" class="img-fluid" style="object-fit: cover;" loading="lazy" width="800" height="450">
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="l-footer bg-dark text-white py-5 border-top">
+   <div class="container">
+    <div class="row g-4">
+     <div class="col-lg-4">
+      <h2 class="h5 mb-3">Zelená Oáza</h2>
+      <p class="text-white-50">Váš partner pre profesionálne záhradnícke služby na Slovensku. Tvoríme krásne a udržateľné záhrady s láskou k prírode.</p>
+      <div class="mt-3">
+       <p class="mb-1"><strong>Telefón:</strong> <a href="tel:{telephone}" class="text-white-50 text-decoration-none">{telephone}</a></p>
+       <p class="mb-1"><strong>Email:</strong> <a href="mailto:info@domain.com" class="text-white-50 text-decoration-none">info@domain.com</a></p>
+       <p class="mb-0"><strong>Adresa:</strong> {address}</p>
+      </div>
+     </div>
+     <div class="col-lg-2 col-md-4">
+      <h3 class="h6 mb-3">Navigácia</h3>
+      <ul class="list-unstyled">
+       <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Domov</a></li>
+       <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">O Nás</a></li>
+       <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Služby</a></li>
+       <li class="mb-2"><a href="team.html" class="text-white-50 text-decoration-none">Tím</a></li>
+       <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Kontakt</a></li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-md-4">
+      <h3 class="h6 mb-3">Právne Informácie</h3>
+      <ul class="list-unstyled">
+       <li class="mb-2"><a href="privacy.html" class="text-white-50 text-decoration-none">Zásady Ochrany Súkromia</a></li>
+       <li class="mb-2"><a href="terms_and_conditions.html" class="text-white-50 text-decoration-none">Obchodné Podmienky</a></li>
+       <li class="mb-2"><a href="terms_of_services.html" class="text-white-50 text-decoration-none">Podmienky Služieb</a></li>
+       <li class="mb-2"><a href="cookie_policy.html" class="text-white-50 text-decoration-none">Politika Cookies</a></li>
+       <li class="mb-2"><a href="gdpr-rights.html" class="text-white-50 text-decoration-none">GDPR Práva</a></li>
+       <li class="mb-2"><a href="impressum.html" class="text-white-50 text-decoration-none">Impressum</a></li>
+      </ul>
+     </div>
+     <div class="col-lg-3 col-md-4">
+      <h3 class="h6 mb-3">Pracovné Hodiny</h3>
+      <ul class="list-unstyled text-white-50">
+       <li class="mb-2">Pondelok - Piatok: 8:00 - 18:00</li>
+       <li class="mb-2">Sobota: 9:00 - 14:00</li>
+       <li class="mb-2">Nedeľa: Zatvorené</li>
+      </ul>
+     </div>
+    </div>
+    <hr class="my-4 bg-white-50">
+    <div class="row">
+     <div class="col-12 text-center text-white-50">
+      <p class="mb-0">© 2025 Zelená Oáza. Všetky práva vyhradené.</p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js" defer></script>
+ </body>
+</html>
