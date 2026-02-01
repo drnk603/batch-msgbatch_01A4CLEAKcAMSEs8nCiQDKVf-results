@@ -9,9 +9,9 @@
     BREAKPOINT_MD: 768,
     BREAKPOINT_LG: 1024,
     PATTERNS: {
-      EMAIL: /^[^s@]+@[^s@]+.[^s@]+$/,
-      PHONE: /^[ds+()[]-]{10,20}$/,
-      NAME: /^[a-zA-ZÀ-ÿs-']{2,50}$/
+      EMAIL: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      PHONE: /^[\d+()\[\]-]{10,20}$/,
+      NAME: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/
     }
   };
 
@@ -245,10 +245,10 @@
   }
 
   function initActiveMenu() {
-    const currentPath = window.location.pathname.replace(/^/+/, '/');
+    const currentPath = window.location.pathname.replace(/^\/+/, '/');
     const navLinks = document.querySelectorAll('.c-nav__link, .nav-link');
     navLinks.forEach((link) => {
-      const linkPath = (link.getAttribute('href') || '').replace(/^.//, '').replace(/^/+/, '/');
+      const linkPath = (link.getAttribute('href') || '').replace(/^.\//, '').replace(/^\/+/, '/');
       if (linkPath === '/' || linkPath === '/index.html') {
         if (currentPath === '/' || currentPath === '/index.html' || currentPath === '') {
           link.setAttribute('aria-current', 'page');
